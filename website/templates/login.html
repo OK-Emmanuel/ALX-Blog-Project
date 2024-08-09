@@ -1,0 +1,22 @@
+{% extends "base.html"%}
+
+{%block title%}ALXBlog{%endblock%}
+
+{% block content %}
+    <div class="header-bar">
+    <h1>LOGIN</h1>
+    </div>
+
+    <form action="">
+        <input type="email" name="email" id="email" placeholder="Enter Email">
+
+        <input type="password" name="password" id="password" placeholder="Enter Password">
+
+        <button type="submit">LOGIN</button>
+    </form>
+
+    
+    <a href="" class="authlinks" style="margin-bottom: 0px">Forgot Password?</a> <br>
+        
+    <a  href="/sign" class="authlinks">Don't have an Account? &nbsp <span>SignUp!</span></a>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html"%}
+
+{%block title%}ALXBlog{%endblock%}
+ 
+{% block content %}
+
+<img src="/static/images/hero-image.png" width="686" height="257" 
+alt="hero" id="hero" style="margin-top: 25px;">
+
+<div id="hero-explainer-board">
+    <div id="explainer-text" style="display: flex; flex-direction: row;">
+        <img src="/static/images/quotation-mark.png" style="padding-left: 0px; 
+        padding-bottom: 0px; font-weight: lighter;" width="25px" height="25px" 
+        alt="quotation-mark">
+        <p id="exp-text-p-left">1,203  ALX Students and Fellows <br>
+            have shared their true, Inspiring, <br>
+            and vibrant ALX stories which <br>
+            are inspiring other tech <br>
+            youngies to find their way...</p>
+    </div>
+    <div id="explainer-images">
+        <img src="/static/images/user-male.png" width="150px" height="150px" alt="user-male">
+        <img src="/static/images/user-female.png" width="150px" height="150px" alt="user-female">
+    </div>
+</div>
+
+<div id="hero-add-story-section">
+   <div id="add-story-container">
+        <a id="add-story-button" href="/alxstorieswrite">
+            
+            <img src="\static\images\add.png" 
+            width="45px" height="45px" alt="add-icon" style="margin-top: 12px;">
+            
+            <h1  style="display: flex; flex-direction: row; justify-content: center; 
+            align-items: center; margin-left: 10px;">ADD YOUR STORY</h1>
+        </a>
+
+        <a href="/alxstoriesread" id="available-posts" style="color: black; padding-left: 165px;"><p>
+            <span id="counter">1203 &nbsp</span>stories available</p></a>
+   </div>
+</div>
+
+<div id="read-all-stories">
+    <a class="authlinks" href="/alxstoriesread" style="padding-left: 545px; font-weight: bold;">Read All Stories</a>
+ </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'>
+
+</head>
+    <title>{%block title%}ALXBlog{%endblock%}</title>
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="/static/images/alx-logo.png" id="logo" alt="logo"></a>
+        
+        <ul>
+            <li><a href="/sign">SignUp</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/alxstoriesread">ALX Stories</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">{% block content %}{% endblock %}</div>
+
+
+</body>
+</html>

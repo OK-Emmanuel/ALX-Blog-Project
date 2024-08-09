@@ -1,0 +1,42 @@
+{% extends "base.html"%}
+
+{%block title%}ALXBlog{%endblock%}
+
+{% block content %}
+<div class="header-bar">
+    <h1>PROFILE</h1>
+</div>
+
+<div id="profile-main">
+    <div id="profile-img">
+    <img src="/static/images/user-female.png" width="250px" height="250px" alt="user-female">
+    
+    <a href="" id="text-info-image-change"><p>Change your Image</p></a>
+    </div>
+
+    <div id="profile-info">
+        <p id="info">Sarah Nwabu</p>
+        <p id="info">Software Engineering</p>
+        <p id="info">sarah@gmail.com</p>
+
+        <a href="" id="text-info-image-change2" style="padding-right: 20px;"><p>Edit profile Information</p></a>
+    </div>
+</div>
+
+<h1 id="text-black-center" style="padding: 0px; margin: 0px;">YOUR STORY</h1>
+
+<div id="hero-explainer-board">
+        <img src="/static/images/quotation-mark.png" style="padding-left: 0px; 
+        padding-bottom: 90px; font-weight: lighter;" width="35px" height="35px" alt="quotation-mark">
+
+        <p id="exp-text-p">I was an amateur programmer with a passion before i joined ALX. <br>
+            Getting exposed to the rudiments of the C programming language <br>
+            was difficult. Having being exposed to Python. It is all making better <br>
+            sense now. Thank to ALX. I am a more confident programmer now.</p>
+</div>
+
+<div id="story-link-create-new">
+    <a href="/alxstorieswrite" id="text-black-center-underline"><p>Create New Story</p></a>
+    <a href="/alxstorieswrite" id="text-black-center-underline-2"><p>Edit Your Story</p></a>
+</div>
+{% endblock %}

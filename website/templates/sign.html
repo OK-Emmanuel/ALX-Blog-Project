@@ -1,0 +1,42 @@
+{% extends "base.html"%}
+
+{%block title%}ALXBlog{%endblock%}
+
+{% block content %}
+    <div class="header-bar">
+    <h1>SIGNUP</h1>
+    </div>
+
+    <form action="">
+        <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name">
+
+        <input type="email" name="email" id="email" placeholder="Enter Email">
+
+        <select name="techtrack" id="techtrack">
+            <option value="TT">ALX Tech Track</option>
+            <option value="SE">Software Engineering</option>
+            <option value="DS">Data Science</option>
+            <option value="DA">Data Analysis</option>
+            <option value="AWS">Amazon Web Service</option>
+            <option value="SF">SalesForce</option>
+            <option value="VA">Virtual Assistance</option>
+            <option value="AICE">AICE</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <select name="grad-status" id="grad-status">
+            <option value="TT">Graduation Status</option>
+            <option value="SE">Intending</option>
+            <option value="DS">Learner</option>
+            <option value="DA">Fellow</option>
+        </select>
+
+        <input type="password" name="password1" id="password1" placeholder="Enter Password">
+
+        <input type="password" name="password2" id="password2" placeholder="Confirm Password">
+
+        <button type="submit">SIGNUP</button>
+    </form>
+
+    <a class="authlinks" href="/login">Already Signed Up? &nbsp <span>Login</span></a>
+{% endblock %}
